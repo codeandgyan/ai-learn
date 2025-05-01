@@ -181,9 +181,10 @@ Refer https://ollama.com/search
   - The ollama client will pull `gemma3:1b` model into the docker which is lightweight.
   - Briging up FastAPI app: `uvicorn ollama_api:app --port 8000`.
  - Sending a POST to http://127.0.0.1:8000/docs#/default/chat_chat_post with a message say "How are you" to chat with local model.
-    > - **Ollama** is an AI model inference platform designed to easily integrate large language models (LLMs) into applications. It offers a variety of features to interact with models through simple APIs and aims to simplify deploying and scaling AI solutions.
-    > - **Uvicorn** is an **ASGI server** (Asynchronous Server Gateway Interface), and it is commonly used to run **FastAPI** apps, though it can also be used with other ASGI-based web frameworks.
-    > - **FastAPI** is a Python web framework, and **Uvicorn** serves as the server that runs the FastAPI app. So, Uvicorn is indeed a server runtime for FastAPI, as it handles the HTTP requests and interacts with the FastAPI application.
+   
+> - **Ollama** is an AI model inference platform designed to easily integrate large language models (LLMs) into applications. It offers a variety of features to interact with models through simple APIs and aims to simplify deploying and scaling AI solutions.
+> - **Uvicorn** is an **ASGI server** (Asynchronous Server Gateway Interface), and it is commonly used to run **FastAPI** apps, though it can also be used with other ASGI-based web frameworks.
+> - **FastAPI** is a Python web framework, and **Uvicorn** serves as the server that runs the FastAPI app. So, Uvicorn is indeed a server runtime for FastAPI, as it handles the HTTP requests and interacts with the FastAPI application.
 
  
 

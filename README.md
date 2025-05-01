@@ -174,6 +174,7 @@ Guiding the model to respond with a specific personality or role.
 Asking the model to act as a specific character or persona.
 
 ## Running a Model in Local Machine
+Refer https://ollama.com/search 
  - `docker-compose.yml` -> `docker compose up`: A docker container on which ollama is running. 
  - `ollama_api.py`
   - A FastAPI app that hosts the Chat endpoint which connects to ollama.

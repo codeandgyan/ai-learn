@@ -179,7 +179,12 @@ Asking the model to act as a specific character or persona.
   - A FastAPI app that hosts the Chat endpoint which connects to ollama.
   - The ollama client will pull `gemma3:1b` model into the docker which is lightweight.
   - Briging up FastAPI app: `uvicorn ollama_api:app --port 8000`.
- - Sending a POST to http://127.0.0.1:8000/docs#/default/chat_chat_post with a message say "How are you" to chat with local model. 
+ - Sending a POST to http://127.0.0.1:8000/docs#/default/chat_chat_post with a message say "How are you" to chat with local model.
+
+    > - **Uvicorn** is an **ASGI server** (Asynchronous Server Gateway Interface), and it is commonly used to run **FastAPI** apps, though it can also be used with other ASGI-based web frameworks.
+    > - **FastAPI** is a Python web framework, and **Uvicorn** serves as the server that runs the FastAPI app. So, Uvicorn is indeed a server runtime for FastAPI, as it handles the HTTP requests and interacts with the FastAPI application.
+
+ 
 
     
 

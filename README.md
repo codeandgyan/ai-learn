@@ -42,6 +42,12 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 ```
 
+### Get A Google Gemini API Key from Gemini Studio
+`.env` - create this file
+```
+GEMINI_API_KEY=<apikey>
+```
+
 ## Transformer Architecture
 
 ![image](https://github.com/user-attachments/assets/16b217d4-0236-47ad-90bd-eb78b20d8932)

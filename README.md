@@ -173,6 +173,14 @@ Guiding the model to respond with a specific personality or role.
 ### Roleplaying Prompting
 Asking the model to act as a specific character or persona.
 
+## Running a Model in Local Machine
+ - `docker-compose.yml` -> `docker compose up`: A docker container on which ollama is running. 
+ - `ollama_api.py`
+  - A FastAPI app that hosts the Chat endpoint which connects to ollama.
+  - The ollama client will pull `gemma3:1b` model into the docker which is lightweight.
+  - Briging up FastAPI app: `uvicorn ollama_api:app --port 8000`.
+ - Sending a POST to http://127.0.0.1:8000/docs#/default/chat_chat_post with a message say "How are you" to chat with local model. 
+
     
 
 

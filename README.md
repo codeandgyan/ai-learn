@@ -1,7 +1,7 @@
 # Gen AI Learn Playground
 
-# Setup Code
-## Create a Python environment
+## Setup Code
+### Create a Python environment
 - Windows
 ```
 python -m venv venv
@@ -11,7 +11,7 @@ python -m venv venv
 python3 -m venv venv
 ```
 
-## Activate the Environment
+### Activate the Environment
 - Windows
 ```
 .\venv\Scripts\activate
@@ -21,37 +21,37 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-## Freeze Requirements
+### Freeze Requirements
 ```
 pip freeze > requirements.txt
 ```
 
-## Install Dependencies (Requirements)
+### Install Dependencies (Requirements)
 ```
 pip install -r requirements.txt
 ```
 
-# Transformer Architecture
-## Input, Encoding and Embeddings
+## Transformer Architecture
+### Input, Encoding and Embeddings
 - Tokenization Process 
     Example: Split into different words. And covert that into numbers.
     `tokenization.py`
 - Vector Embeddings
     Semantic Meaning
     `embeddings.py`
-## Positional Encoding
+### Positional Encoding
 - The position of tokens is important.
     Example: "The dog chased the cat" carries a different meaning than "The cat chased the dog"
 
-## Attention
-### Self Attention
+### Attention
+#### Self Attention
 (Always has one HEAD)
 Change the tokens based on the combination of each word which forms a sentence.
     - He broke the glass
     - He broke the news
 Contextual understanding. Tokens talk to each other to adjust its embeddings.
 
-### Multi-Head Attention
+#### Multi-Head Attention
 (Has more than one HEAD)
 
 Example: Watching a cricket match. (CSK vs RCB)
@@ -63,14 +63,14 @@ Example: Watching a cricket match. (CSK vs RCB)
 
 Advantage: More context aware.
 
-## Feed Forward
+### Feed Forward
 (Neural Network)
     - Transforms each node to improve or modify its features.
     - Applies some learned weights for refinement.
     - Matrix multiplication, and more Mathmatics
 
-## Input and Output
-### Training Phase
+### Input and Output
+#### Training Phase
     - Give input: "This animal is a "
     (The expected next word is "dog")
     - AI generates the output based on given input.
@@ -95,7 +95,7 @@ Advantage: More context aware.
     - Loss is 4-4=0 (Boom, that's the correct output)
     - <end> of training
 
-### Inferencing Phase
+#### Inferencing Phase
 - Linear Probability Distribution - probability score for each next token (word)
 - Softmax picks the most appropriate probability
     - The more softmax the more creativity, low accuracy

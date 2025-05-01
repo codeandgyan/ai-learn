@@ -33,15 +33,15 @@ pip install -r requirements.txt
 
 # Transformer Architecture
 ## Input, Encoding and Embeddings
-    - Tokenization Process 
-        Example: Split into different words. And covert that into numbers.
-        `tokenization.py`
-    - Vector Embeddings
-        Semantic Meaning
-        `embeddings.py`
+- Tokenization Process 
+    Example: Split into different words. And covert that into numbers.
+    `tokenization.py`
+- Vector Embeddings
+    Semantic Meaning
+    `embeddings.py`
 ## Positional Encoding
-    - The position of tokens is important.
-        Example: "The dog chased the cat" carries a different meaning than "The cat chased the dog"
+- The position of tokens is important.
+    Example: "The dog chased the cat" carries a different meaning than "The cat chased the dog"
 
 ## Attention
 ### Self Attention
@@ -54,12 +54,12 @@ Contextual understanding. Tokens talk to each other to adjust its embeddings.
 ### Multi-Head Attention
 (Has more than one HEAD)
 
-    Example: Watching a cricket match. (CSK vs RCB)
-     - Dhoni is the captain
-     - Who is the current bowler
-     - Who is the current batter
-     - What will be the score
-     Focusing on different aspects / different perspectives
+Example: Watching a cricket match. (CSK vs RCB)
+ - Dhoni is the captain
+ - Who is the current bowler
+ - Who is the current batter
+ - What will be the score
+ Focusing on different aspects / different perspectives
 
 Advantage: More context aware.
 
@@ -96,11 +96,11 @@ Advantage: More context aware.
     - <end> of training
 
 ### Inferencing Phase
-    - Linear Probability Distribution - probability score for each next token (word)
-    - Softmax picks the most appropriate probability
-        - The more softmax the more creativity, low accuracy
-        - The less softmax the more accuracy, low creativity
-        (Temperature setting in ChatGPT / Google Gemini)
+- Linear Probability Distribution - probability score for each next token (word)
+- Softmax picks the most appropriate probability
+    - The more softmax the more creativity, low accuracy
+    - The less softmax the more accuracy, low creativity
+    (Temperature setting in ChatGPT / Google Gemini)
 
 
 

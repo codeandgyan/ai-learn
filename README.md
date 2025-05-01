@@ -32,6 +32,8 @@ pip install -r requirements.txt
 ```
 
 ## Transformer Architecture
+![image](https://github.com/user-attachments/assets/16b217d4-0236-47ad-90bd-eb78b20d8932)
+
 ### Input, Encoding and Embeddings
 - Tokenization Process 
     Example: Split into different words. And covert that into numbers.

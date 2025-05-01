@@ -42,8 +42,9 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 ```
 
-### Get A Google Gemini API Key from Gemini Studio
-`.env` - create this file
+### Configure Google Gemini API Key
+Go to Google Gemini Studio and generate an API Key.
+`.env` - create this file and configure this key as below.
 ```
 GEMINI_API_KEY=<apikey>
 ```

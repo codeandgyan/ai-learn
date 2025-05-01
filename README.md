@@ -65,7 +65,8 @@ GEMINI_API_KEY=<apikey>
 ### Positional Encoding
 
 - The position of tokens is important.
-  Example: "The dog chased the cat" carries a different meaning than "The cat chased the dog"
+
+  Example: "_The dog chased the cat_" carries a different meaning than "_The cat chased the dog_"
 
 ### Attention
 

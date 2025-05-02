@@ -95,7 +95,10 @@ Advantage: More context aware.
 
 ### Feed Forward
 
-(Neural Network) - Transforms each node to improve or modify its features. - Applies some learned weights for refinement. - Matrix multiplication, and more Mathmatics
+(Neural Network) 
+- Transforms each node to improve or modify its features.
+- Applies some learned weights for refinement.
+- Matrix multiplication, and more Mathmatics
 
 ### Input and Output
 

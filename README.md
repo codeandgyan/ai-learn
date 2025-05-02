@@ -76,6 +76,7 @@ GEMINI_API_KEY=<apikey>
 Change the tokens based on the combination of each word which forms a sentence. 
 - He broke the glass
 - He broke the news
+
   Contextual understanding. Tokens talk to each other to adjust its embeddings.
 
 #### Multi-Head Attention

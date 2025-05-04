@@ -199,6 +199,10 @@ Refer https://ollama.com/search
 > - **Ollama** is an AI model inference platform designed to easily integrate large language models (LLMs) into applications. It offers a variety of features to interact with models through simple APIs and aims to simplify deploying and scaling AI solutions.
 > - **Uvicorn** is an **ASGI server** (Asynchronous Server Gateway Interface), and it is commonly used to run **FastAPI** apps, though it can also be used with other ASGI-based web frameworks.
 > - **FastAPI** is a Python web framework, and **Uvicorn** serves as the server that runs the FastAPI app. So, Uvicorn is indeed a server runtime for FastAPI, as it handles the HTTP requests and interacts with the FastAPI application.
+>
+# Transformer Code - google collab links
+https://colab.research.google.com/drive/14VSKayJud9-krASqCJqoxMQaPT245oEK?usp=sharing
+https://colab.research.google.com/drive/1jKvluW3ecTeYhqTorEuIXJjoB71sEs1Q?usp=sharing
 
  
 

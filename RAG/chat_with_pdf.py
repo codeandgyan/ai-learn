@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain_qdrant import QdrantVectorStore
 from qdrant_client import QdrantClient
 
@@ -58,8 +58,30 @@ relevant_chunks = retriever.similarity_search(
 print("Relevant Chunks", relevant_chunks)
 
 SYSTEM_PROMPT = f"""
-You are a helpful AI Assistant who responds based on the available context.
+You are a helpful AI Assistant who responds based on the available context pulled from a PDF document.
+Return references to the context such as Page number, page label, title or anything you deem relevant within the response.
 
-Context:
+# Context:
 {relevant_chunks}
 """
+
+llm = ChatGoogleGenerativeAI(
+    model="gemini-2.0-flash",
+    temperature=0,
+    max_tokens=None,
+    timeout=None,
+    max_retries=2,
+    api_key=api_key,
+)
+
+query = input("Enter your query: ")
+
+messages = [
+    (
+        "system",
+        SYSTEM_PROMPT,
+    ),
+    ("human", query),
+]
+response = llm.invoke(messages)
+print("🤖 Response:", response.text)

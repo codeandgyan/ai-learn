@@ -1,7 +1,10 @@
 # Gen AI Learn Playground
 
 ## Setup Code
-
+- Clone this repository
+  ```
+  git clone https://github.com/codeandgyan/ai-learn.git
+  ```
 ### Create a Python environment
 
 - Windows
